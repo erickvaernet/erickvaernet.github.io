@@ -3,12 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BeltBuster-EV: Minería Idle espacial para Android</title>
-<meta name="description" content="BeltBuster-EV: juego idle de minería espacial para Android. Tus drones minan asteroides aunque no estés. Funciona sin conexión, anuncios solo si quieres. Gratis en Google Play.">
+<title>BeltBuster-EV: minería idle espacial para Android</title>
+<meta name="description" content="BeltBuster: minería idle espacial con jefes y reliquias para Android. Tus drones minan asteroides aunque no estés. Funciona sin conexión, anuncios solo si quieres. Gratis en Google Play.">
 <link rel="canonical" href="https://erickvaernet.github.io/beltbuster-ev/">
 <link rel="icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap" rel="stylesheet">
 <meta property="og:type" content="website">
-<meta property="og:title" content="BeltBuster-EV: Minería Idle espacial">
+<meta property="og:title" content="BeltBuster: minería idle espacial con jefes y reliquias">
 <meta property="og:description" content="Tus drones minan asteroides aunque no estés. Gratis en Google Play.">
 <meta property="og:url" content="https://erickvaernet.github.io/beltbuster-ev/">
 <meta property="og:image" content="https://erickvaernet.github.io/beltbuster-ev/img/promo.jpg">
@@ -18,8 +21,8 @@
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "BeltBuster-EV",
-  "alternateName": ["BeltBuster", "Belt Buster"],
-  "description": "Juego idle de minería espacial para Android: drones, jefes, reliquias y progreso sin conexión.",
+  "alternateName": ["BeltBuster", "Belt Buster", "Beltbuster"],
+  "description": "Minería idle espacial con jefes y reliquias para Android: drones, Salto y progreso sin conexión.",
   "url": "https://erickvaernet.github.io/beltbuster-ev/",
   "image": "https://erickvaernet.github.io/beltbuster-ev/img/promo.jpg",
   "genre": ["Idle", "Incremental", "Roguelite"],
@@ -41,6 +44,8 @@
   a { color:var(--accent); }
   .hero { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
   .hero img { width:96px; height:96px; border-radius:22px; box-shadow:0 8px 30px #38e1ff33; }
+  h1, h2, .card h3, .cta, .sign { font-family:"Inter",system-ui,sans-serif; font-weight:800; }
+  .sign { margin:28px 0 0; font-size:1.15rem; color:var(--accent); }
   h1 { font-size:clamp(1.7rem, 5vw, 2.4rem); line-height:1.15; margin:0; }
   .tag { color:var(--muted); margin:4px 0 0; }
   .cta { display:inline-block; margin-top:20px; padding:14px 26px; border-radius:14px; background:var(--cta); color:var(--cta-text);
@@ -63,14 +68,14 @@
 
 <section>
   <div class="hero">
-    <img src="img/icon.png" alt="Ícono de BeltBuster-EV" width="96" height="96">
+    <img src="img/icon.png" alt="Ícono de BeltBuster" width="96" height="96">
     <div>
-      <h1>BeltBuster-EV: Minería Idle</h1>
-      <p class="tag">Juego idle de minería espacial para Android · Gratis</p>
+      <h1>BeltBuster</h1>
+      <p class="tag">Minería idle espacial con jefes y reliquias · Android · Gratis</p>
     </div>
   </div>
   <p>Tus drones minan asteroides aunque no estés. Vuelve cuando quieras: la bodega te espera llena.
-  Vence al jefe de cada sector, haz SALTO y elige 1 de 3 reliquias que cambian las reglas.</p>
+  Vence al jefe de cada sector, SALTA y elige 1 de 3 reliquias que cambian las reglas.</p>
   <a class="cta" href="https://play.google.com/store/apps/details?id=com.erickadriel.beltbusterev&amp;referrer=utm_source%3Dweb%26utm_medium%3Dsite%26utm_campaign%3Dlanding_es">Descargar en Google Play</a>
 
   <div class="shots">
@@ -83,17 +88,18 @@
   </div>
 
   <div class="grid">
-    <div class="card"><h3>Funciona sin conexión</h3><p>En el colectivo, en el subte o sin datos. Hasta 12 h de minería mientras no estás.</p></div>
+    <div class="card"><h3>Funciona sin conexión</h3><p>En el bus, en el metro o sin datos. Hasta 12 h de minería mientras no estás.</p></div>
     <div class="card"><h3>Anuncios solo si quieres</h3><p>Nunca te interrumpimos. Cada anuncio es opcional y te da un bonus.</p></div>
     <div class="card"><h3>Partidas de 5 minutos</h3><p>Un rato todos los días: misiones, suministro diario y jefes cada vez más grandes.</p></div>
     <div class="card"><h3>Sin trampas</h3><p>Sin energía, sin esperas obligatorias, sin cajas al azar, sin pagar para ganar.</p></div>
   </div>
   <p class="tag">Hecho por una sola persona en Argentina.</p>
+  <p class="sign">Los números suben. Las rocas explotan.</p>
 </section>
 
 <section id="en" lang="en">
-  <h2>BeltBuster-EV: Idle Mining</h2>
-  <p>An idle space-mining game for Android. Your drones mine asteroids even when you're away.
+  <h2>BeltBuster</h2>
+  <p>An idle space-mining roguelite with bosses and relics, for Android. Your drones mine asteroids even when you're away.
   Beat every sector boss, WARP and pick 1 of 3 relics that bend the rules. Plays offline. Ads only if you want them. Free.</p>
   <a class="cta" href="https://play.google.com/store/apps/details?id=com.erickadriel.beltbusterev&amp;referrer=utm_source%3Dweb%26utm_medium%3Dsite%26utm_campaign%3Dlanding_en">Get it on Google Play</a>
   <div class="shots">
@@ -105,6 +111,7 @@
     <img src="img/en_6.webp" alt="Hangar: 100+ looks for your station" loading="lazy" width="540" height="960">
   </div>
   <p class="tag">Made by one person in Argentina.</p>
+  <p class="sign">Numbers go up. Rocks go boom.</p>
 </section>
 
 <footer>

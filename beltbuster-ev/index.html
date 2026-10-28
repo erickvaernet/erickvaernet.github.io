@@ -120,5 +120,14 @@
   <a href="mailto:ev.games.ar@gmail.com">ev.games.ar@gmail.com</a>
 </footer>
 </main>
+<script>
+// One anonymous click count per Play button (network web, campaign landing_es/en; no id, no cookie).
+document.querySelectorAll("a.cta").forEach(function (a) {
+  a.addEventListener("click", function () {
+    var c = (a.href.match(/utm_campaign%3D([a-z0-9_-]+)/) || [])[1] || "";
+    try { navigator.sendBeacon("https://beltbuster-collector.evgames.workers.dev/v1/click", JSON.stringify({s: "web", m: "site", c: c})); } catch (e) {}
+  });
+});
+</script>
 </body>
 </html>

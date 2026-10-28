@@ -5,8 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>BeltBuster en Google Play</title>
-<meta http-equiv="refresh" content="0; url=https://play.google.com/store/apps/details?id=com.erickadriel.beltbusterev&amp;referrer=utm_source%3Dyoutube%26utm_medium%3Dbio">
-<script>location.replace("https://play.google.com/store/apps/details?id=com.erickadriel.beltbusterev&referrer=utm_source%3Dyoutube%26utm_medium%3Dbio");</script>
+<!-- Short link for YouTube (utm_source=youtube). ?c=<video id> adds utm_campaign. One anonymous click count
+     (network, medium, campaign; no id, no cookie) goes to the game's stats server before Google Play opens. -->
+<meta http-equiv="refresh" content="1; url=https://play.google.com/store/apps/details?id=com.erickadriel.beltbusterev&amp;referrer=utm_source%3Dyoutube%26utm_medium%3Dbio">
+<script>
+(function () {
+  var s = "youtube", m = "bio", c = "";
+  try { c = (new URLSearchParams(location.search).get("c") || "").toLowerCase(); } catch (e) {}
+  if (!/^[a-z0-9_-]{1,24}$/.test(c)) c = "";
+  var ref = "utm_source=" + s + "&utm_medium=" + m + (c ? "&utm_campaign=" + c : "");
+  try { navigator.sendBeacon("https://beltbuster-collector.evgames.workers.dev/v1/click", JSON.stringify({s: s, m: m, c: c})); } catch (e) {}
+  location.replace("https://play.google.com/store/apps/details?id=com.erickadriel.beltbusterev&referrer=" + encodeURIComponent(ref));
+})();
+</script>
 <style>body{margin:0;background:#06080f;color:#e6edf3;font:16px/1.6 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;padding:16px;text-align:center}a{color:#38e1ff}</style>
 </head>
 <body>
